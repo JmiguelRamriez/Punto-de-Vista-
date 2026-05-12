@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Mail, Twitter, Instagram, Linkedin } from "lucide-react";
+import { Mail, Instagram, Linkedin } from "lucide-react";
 
 export function Footer() {
   return (
@@ -99,28 +99,25 @@ export function Footer() {
             {/* Social Links */}
             <div className="flex gap-4">
               <Link 
-                href="#" 
-                className="w-10 h-10 border border-white/20 flex items-center justify-center hover:bg-white/10 transition-colors"
-                aria-label="Twitter"
-              >
-                <Twitter className="h-4 w-4" />
-              </Link>
-              <Link 
-                href="#" 
+                href="https://www.instagram.com/jmiwe21?igsh=amJ0NzNpYnhkb3Rm&utm_source=qr" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 border border-white/20 flex items-center justify-center hover:bg-white/10 transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="h-4 w-4" />
               </Link>
               <Link 
-                href="#" 
+                href="https://www.linkedin.com/in/jos%C3%A9-miguel-ramirez-gutierrez-a592a4351/" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 border border-white/20 flex items-center justify-center hover:bg-white/10 transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="h-4 w-4" />
               </Link>
               <Link 
-                href="#" 
+                href="mailto:A01712628@tec.mx" 
                 className="w-10 h-10 border border-white/20 flex items-center justify-center hover:bg-white/10 transition-colors"
                 aria-label="Correo"
               >
