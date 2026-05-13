@@ -80,7 +80,7 @@ export default function ArticlePage() {
       <div ref={addToRefs} className="fade-up-section my-16 md:my-24">
         <div className="relative w-full h-[50vh] md:h-[80vh]">
           <Image
-            src="/images/tec-campus.jpg"
+            src="https://tec.mx/sites/default/files/styles/16_9/public/repositorio/Campus/Queretaro/Instalaciones/biblioteca-campus-queretaro-tec.webp?itok=l_2QsBjr"
             alt="Campus Tecnologico de Monterrey"
             fill
             className="object-cover"
