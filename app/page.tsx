@@ -2,7 +2,6 @@
 
 import { useEffect, useRef } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { Navbar } from "@/components/article/navbar";
 import { HeroSection } from "@/components/article/hero-section";
 import { ArticleBody } from "@/components/article/article-body";
@@ -10,7 +9,6 @@ import { ImageGallery } from "@/components/article/image-gallery";
 import { PullQuote } from "@/components/article/pull-quote";
 import { InterviewSection } from "@/components/article/interview-section";
 import { Footer } from "@/components/article/footer";
-import { ArrowRight } from "lucide-react";
 
 export default function ArticlePage() {
   const sectionsRef = useRef<HTMLDivElement[]>([]);
@@ -123,35 +121,6 @@ export default function ArticlePage() {
           role="[Cargo o Titulo]"
         />
       </div>
-
-      {/* Research Spotlight Section */}
-      <section ref={addToRefs} className="fade-up-section py-20 md:py-28 bg-secondary/30">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
-            <div className="relative aspect-[4/3] overflow-hidden bg-muted">
-              <Image
-                src="/images/team-collaboration.jpg"
-                alt="Investigacion"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div>
-              <span className="text-xs uppercase tracking-[0.2em] text-accent font-medium">Investigacion</span>
-              <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mt-3 leading-tight">
-                Donde la ciencia encuentra su proposito
-              </h2>
-              <p className="mt-5 text-muted-foreground leading-relaxed">
-                En el Tecnologico de Monterrey, la investigacion no solo se queda en los laboratorios. Nuestros investigadores y estudiantes trabajan en proyectos que tienen un impacto real en la sociedad, desde soluciones de energia limpia hasta avances en medicina regenerativa.
-              </p>
-              <Link href="#" className="inline-flex items-center gap-2 mt-8 text-sm font-medium text-foreground border-b border-foreground/20 hover:border-foreground/60 pb-0.5 transition-all group">
-                Explorar investigacion
-                <ArrowRight className="h-3.5 w-3.5 group-hover:translate-x-0.5 transition-transform" />
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <div ref={addToRefs} className="fade-up-section">
         <ArticleBody>
