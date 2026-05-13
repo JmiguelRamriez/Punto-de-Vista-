@@ -3,143 +3,109 @@ import { Mail, Instagram, Linkedin } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="bg-[#1a1a2e] text-white">
-      <div className="max-w-6xl mx-auto px-6 py-16 md:py-20">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8">
-          {/* Brand */}
-          <div className="md:col-span-2">
-            <Link href="/" className="font-serif text-2xl font-bold">
-              Punto<span className="font-light"> de Vista</span>
+    <footer className="bg-[#0a1628] text-white mt-20">
+      <div className="max-w-7xl mx-auto px-6 py-20 md:py-24">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-8">
+          <div className="md:col-span-5">
+            <Link href="/" className="font-serif text-2xl font-bold text-white">
+              Punto<span className="font-light text-white/60"> de Vista</span>
             </Link>
-            <p className="mt-4 text-white/70 max-w-md leading-relaxed">
-              Contando las historias de innovacion, investigacion y las personas extraordinarias que estan dando forma a nuestro futuro. Una publicacion dedicada a la narrativa centrada en el ser humano en ciencia y tecnologia.
+            <p className="mt-5 text-white/40 max-w-md leading-relaxed text-sm">
+              Una plataforma editorial del Tecnologico de Monterrey. Contamos las historias de innovacion, investigacion y las personas extraordinarias que estan dando forma a nuestro futuro a traves de la ingenieria y la tecnologia.
             </p>
-            
-            {/* Newsletter */}
-            <div className="mt-8">
-              <p className="text-sm font-medium mb-3">Suscribete a nuestro boletin</p>
-              <form className="flex gap-2">
+
+            <div className="mt-10">
+              <p className="text-xs uppercase tracking-[0.2em] text-white/30 font-medium mb-4">
+                Suscribete al boletin
+              </p>
+              <form className="flex gap-2 max-w-sm">
                 <input
                   type="email"
-                  placeholder="Ingresa tu correo"
-                  className="flex-1 bg-white/10 border border-white/20 px-4 py-2 text-sm text-white placeholder:text-white/40 focus:outline-none focus:border-white/40 transition-colors"
+                  placeholder="tu@correo.com"
+                  className="flex-1 bg-white/5 border border-white/10 px-4 py-2.5 text-sm text-white placeholder:text-white/20 focus:outline-none focus:border-white/30 transition-colors"
                 />
                 <button
                   type="submit"
-                  className="bg-white text-[#1a1a2e] px-6 py-2 text-sm font-medium hover:bg-white/90 transition-colors"
+                  className="bg-accent text-accent-foreground px-5 py-2.5 text-sm font-medium hover:bg-accent/90 transition-colors"
                 >
                   Suscribirse
                 </button>
               </form>
             </div>
           </div>
-          
-          {/* Navigation */}
-          <div>
-            <h4 className="text-sm font-medium uppercase tracking-widest mb-6 text-white/50">
+
+          <div className="md:col-span-2 md:col-start-7">
+            <h4 className="text-xs uppercase tracking-[0.2em] text-white/30 font-medium mb-6">
               Secciones
             </h4>
-            <ul className="space-y-4">
-              <li>
-                <Link href="#" className="text-white/70 hover:text-white transition-colors">
-                  Entrevistas
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-white/70 hover:text-white transition-colors">
-                  Investigacion
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-white/70 hover:text-white transition-colors">
-                  Historias
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-white/70 hover:text-white transition-colors">
-                  Vida Universitaria
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-white/70 hover:text-white transition-colors">
-                  Egresados
-                </Link>
-              </li>
+            <ul className="space-y-3">
+              {["Innovacion", "Investigacion", "Ingenieria", "Historias", "Vida Universitaria"].map((item) => (
+                <li key={item}>
+                  <Link href="#" className="text-white/50 hover:text-white text-sm transition-colors">
+                    {item}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
-          
-          {/* About & Social */}
-          <div>
-            <h4 className="text-sm font-medium uppercase tracking-widest mb-6 text-white/50">
+
+          <div className="md:col-span-2">
+            <h4 className="text-xs uppercase tracking-[0.2em] text-white/30 font-medium mb-6">
               Acerca de
             </h4>
-            <ul className="space-y-4 mb-8">
-              <li>
-                <Link href="#" className="text-white/70 hover:text-white transition-colors">
-                  Nuestra Mision
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-white/70 hover:text-white transition-colors">
-                  Equipo Editorial
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-white/70 hover:text-white transition-colors">
-                  Contacto
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-white/70 hover:text-white transition-colors">
-                  Escribe para Nosotros
-                </Link>
-              </li>
+            <ul className="space-y-3">
+              {["Nuestra Mision", "Equipo Editorial", "Contacto", "Escribe para Nosotros"].map((item) => (
+                <li key={item}>
+                  <Link href="#" className="text-white/50 hover:text-white text-sm transition-colors">
+                    {item}
+                  </Link>
+                </li>
+              ))}
             </ul>
-            
-            {/* Social Links */}
-            <div className="flex gap-4">
-              <Link 
-                href="https://www.instagram.com/jmiwe21?igsh=amJ0NzNpYnhkb3Rm&utm_source=qr" 
+          </div>
+
+          <div className="md:col-span-2">
+            <h4 className="text-xs uppercase tracking-[0.2em] text-white/30 font-medium mb-6">
+              Redes
+            </h4>
+            <div className="flex gap-3">
+              <Link
+                href="https://www.instagram.com/jmiwe21?igsh=amJ0NzNpYnhkb3Rm&utm_source=qr"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 border border-white/20 flex items-center justify-center hover:bg-white/10 transition-colors"
+                className="w-9 h-9 border border-white/10 flex items-center justify-center hover:bg-white/5 hover:border-white/30 transition-all"
                 aria-label="Instagram"
               >
-                <Instagram className="h-4 w-4" />
+                <Instagram className="h-3.5 w-3.5" />
               </Link>
-              <Link 
-                href="https://www.linkedin.com/in/jos%C3%A9-miguel-ramirez-gutierrez-a592a4351/" 
+              <Link
+                href="https://www.linkedin.com/in/jos%C3%A9-miguel-ramirez-gutierrez-a592a4351/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 border border-white/20 flex items-center justify-center hover:bg-white/10 transition-colors"
+                className="w-9 h-9 border border-white/10 flex items-center justify-center hover:bg-white/5 hover:border-white/30 transition-all"
                 aria-label="LinkedIn"
               >
-                <Linkedin className="h-4 w-4" />
+                <Linkedin className="h-3.5 w-3.5" />
               </Link>
-              <Link 
-                href="mailto:A01712628@tec.mx" 
-                className="w-10 h-10 border border-white/20 flex items-center justify-center hover:bg-white/10 transition-colors"
+              <Link
+                href="mailto:A01712628@tec.mx"
+                className="w-9 h-9 border border-white/10 flex items-center justify-center hover:bg-white/5 hover:border-white/30 transition-all"
                 aria-label="Correo"
               >
-                <Mail className="h-4 w-4" />
+                <Mail className="h-3.5 w-3.5" />
               </Link>
             </div>
           </div>
         </div>
-        
-        {/* Bottom Bar */}
-        <div className="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white/50">
-          <p>&copy; 2026 Punto de Vista. Todos los derechos reservados.</p>
+
+        <div className="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/25">
+          <p>&copy; 2026 Punto de Vista · Tecnologico de Monterrey</p>
           <div className="flex gap-6">
-            <Link href="#" className="hover:text-white transition-colors">
-              Politica de Privacidad
-            </Link>
-            <Link href="#" className="hover:text-white transition-colors">
-              Terminos de Uso
-            </Link>
-            <Link href="#" className="hover:text-white transition-colors">
-              Accesibilidad
-            </Link>
+            {["Privacidad", "Terminos", "Accesibilidad"].map((item) => (
+              <Link key={item} href="#" className="hover:text-white/50 transition-colors">
+                {item}
+              </Link>
+            ))}
           </div>
         </div>
       </div>

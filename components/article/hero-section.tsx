@@ -2,80 +2,65 @@ import Image from "next/image";
 
 export function HeroSection() {
   return (
-    <section className="relative h-screen min-h-[600px] max-h-[900px] w-full">
-      {/* Background Image */}
+    <section className="relative h-screen min-h-[700px] max-h-[1000px] w-full overflow-hidden">
       <Image
         src="/images/hero-robotics.jpg"
         alt="Imagen principal de la entrevista"
         fill
         priority
-        className="object-cover"
+        className="object-cover scale-105"
       />
-      
-      {/* Gradient Overlay - Dark Blue Style */}
-      <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a2e]/95 via-[#1a1a2e]/60 to-[#1a1a2e]/20" />
-      
-      {/* Content */}
-      <div className="absolute inset-0 flex flex-col justify-end pb-16 md:pb-24 px-6">
-        <div className="max-w-4xl mx-auto w-full">
-          {/* Category Tag - Tec Style */}
-          <div className="flex items-center gap-3 mb-6">
-            <span className="bg-white/20 backdrop-blur-sm text-white text-xs uppercase tracking-[0.15em] px-3 py-1.5 border border-white/30">
+
+      <div className="absolute inset-0 bg-gradient-to-t from-[#0a1628]/95 via-[#0a1628]/50 to-[#0a1628]/10" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#0a1628]/30 to-transparent" />
+
+      <div className="absolute inset-0 flex flex-col justify-end pb-20 md:pb-28 px-6">
+        <div className="max-w-5xl mx-auto w-full">
+          <div className="flex items-center gap-4 mb-6">
+            <span className="bg-accent/90 text-accent-foreground text-xs uppercase tracking-[0.2em] px-4 py-1.5 font-medium">
               Entrevista Exclusiva
             </span>
+            <span className="text-white/40 text-sm">·</span>
+            <span className="text-white/50 text-sm tracking-wide">Tecnologico de Monterrey</span>
           </div>
-          
-          {/* Title - PLACEHOLDER */}
-          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white font-bold leading-[1.1] mb-6 text-balance">
+
+          <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-white font-bold leading-[1.05] mb-6 text-balance max-w-5xl">
             [Titulo de la Entrevista]
           </h1>
-          
-          {/* Subtitle - PLACEHOLDER */}
-          <p className="text-white/80 text-lg md:text-xl max-w-2xl leading-relaxed mb-8 text-pretty">
+
+          <p className="text-white/70 text-lg md:text-xl max-w-3xl leading-relaxed mb-10 text-pretty font-light">
             [Subtitulo o breve descripcion del tema de la entrevista y por que es relevante para los lectores.]
           </p>
-          
-          {/* Author Info - PLACEHOLDER */}
-          <div className="flex flex-col sm:flex-row sm:items-center gap-4 text-white/70 text-sm">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-white/20 overflow-hidden">
+
+          <div className="flex flex-col sm:flex-row sm:items-center gap-6 text-white/60 text-sm">
+            <div className="flex items-center gap-4">
+              <div className="w-11 h-11 rounded-full bg-white/10 ring-1 ring-white/20 overflow-hidden flex-shrink-0">
                 <Image
                   src="/images/researcher-portrait-1.jpg"
                   alt="Foto del autor"
-                  width={40}
-                  height={40}
+                  width={44}
+                  height={44}
                   className="w-full h-full object-cover"
                 />
               </div>
               <div>
                 <span className="text-white font-medium">[Nombre del Autor]</span>
-                <span className="mx-2">·</span>
-                <span>[Cargo]</span>
+                <span className="mx-2 text-white/30">·</span>
+                <span className="text-white/60">[Cargo]</span>
               </div>
             </div>
-            <div className="sm:ml-auto flex items-center gap-4">
-              <span>[Fecha de Publicacion]</span>
-              <span className="w-px h-4 bg-white/30" />
+            <div className="flex items-center gap-4 text-white/50">
+              <span>[Fecha]</span>
+              <span className="w-px h-4 bg-white/20" />
               <span>[X] min de lectura</span>
             </div>
           </div>
         </div>
       </div>
-      
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce">
-        <span className="text-white/50 text-xs uppercase tracking-widest">Leer mas</span>
-        <svg 
-          className="w-4 h-4 text-white/50" 
-          fill="none" 
-          strokeLinecap="round" 
-          strokeLinejoin="round" 
-          strokeWidth="2" 
-          viewBox="0 0 24 24" 
-          stroke="currentColor"
-        >
-          <path d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-        </svg>
+
+      <div className="scroll-indicator absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3">
+        <span className="text-white/40 text-[10px] uppercase tracking-[0.25em]">Desplazar</span>
+        <div className="w-px h-10 bg-gradient-to-b from-white/40 to-transparent" />
       </div>
     </section>
   );

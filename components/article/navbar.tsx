@@ -2,8 +2,15 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu, X, Share2, Bookmark } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Menu, X } from "lucide-react";
+
+const navLinks = [
+  { href: "#", label: "Inicio" },
+  { href: "#", label: "Innovacion" },
+  { href: "#", label: "Investigacion" },
+  { href: "#", label: "Ingenieria" },
+  { href: "#", label: "Historias" },
+];
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -11,131 +18,80 @@ export function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 100);
+      setIsScrolled(window.scrollY > 80);
     };
-
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+  }, [isMobileMenuOpen]);
+
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 ${
         isScrolled
-          ? "bg-background/95 backdrop-blur-md shadow-sm py-3"
+          ? "bg-white/80 backdrop-blur-xl shadow-[0_1px_0_rgba(0,0,0,0.06)] py-4"
           : "bg-transparent py-6"
       }`}
     >
       <nav className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-        {/* Logo */}
-        <Link 
-          href="/" 
-          className={`font-serif text-xl md:text-2xl font-bold tracking-tight transition-colors ${
-            isScrolled ? "text-foreground" : "text-white"
+        <Link
+          href="/"
+          className={`font-serif text-xl md:text-2xl font-bold tracking-tight transition-colors duration-500 ${
+            isScrolled ? "text-primary" : "text-white"
           }`}
         >
           Punto<span className="font-light"> de Vista</span>
         </Link>
 
-        {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-8">
-          <Link 
-            href="#" 
-            className={`text-sm tracking-wide hover:opacity-70 transition-opacity ${
-              isScrolled ? "text-foreground" : "text-white"
-            }`}
-          >
-            Inicio
-          </Link>
-          <Link 
-            href="#" 
-            className={`text-sm tracking-wide hover:opacity-70 transition-opacity ${
-              isScrolled ? "text-foreground" : "text-white"
-            }`}
-          >
-            Entrevistas
-          </Link>
-          <Link 
-            href="#" 
-            className={`text-sm tracking-wide hover:opacity-70 transition-opacity ${
-              isScrolled ? "text-foreground" : "text-white"
-            }`}
-          >
-            Investigacion
-          </Link>
-          <Link 
-            href="#" 
-            className={`text-sm tracking-wide hover:opacity-70 transition-opacity ${
-              isScrolled ? "text-foreground" : "text-white"
-            }`}
-          >
-            Nosotros
-          </Link>
+        <div className="hidden md:flex items-center gap-10">
+          {navLinks.map((link) => (
+            <Link
+              key={link.label}
+              href={link.href}
+              className={`text-sm tracking-wider uppercase font-medium transition-all duration-300 hover:opacity-100 ${
+                isScrolled
+                  ? "text-foreground/60 hover:text-foreground"
+                  : "text-white/70 hover:text-white"
+              }`}
+            >
+              {link.label}
+            </Link>
+          ))}
         </div>
 
-        {/* Actions */}
-        <div className="flex items-center gap-2">
-          <Button
-            variant="ghost"
-            size="icon"
-            className={`hidden md:flex ${
-              isScrolled ? "text-foreground hover:bg-muted" : "text-white hover:bg-white/10"
-            }`}
-          >
-            <Share2 className="h-4 w-4" />
-            <span className="sr-only">Compartir articulo</span>
-          </Button>
-          <Button
-            variant="ghost"
-            size="icon"
-            className={`hidden md:flex ${
-              isScrolled ? "text-foreground hover:bg-muted" : "text-white hover:bg-white/10"
-            }`}
-          >
-            <Bookmark className="h-4 w-4" />
-            <span className="sr-only">Guardar articulo</span>
-          </Button>
-          <Button
-            variant="ghost"
-            size="icon"
-            className={`md:hidden ${
-              isScrolled ? "text-foreground" : "text-white"
-            }`}
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          >
-            {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-            <span className="sr-only">Abrir menu</span>
-          </Button>
-        </div>
+        <button
+          className={`md:hidden transition-colors duration-500 ${
+            isScrolled ? "text-foreground" : "text-white"
+          }`}
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          aria-label="Menu"
+        >
+          {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+        </button>
       </nav>
 
-      {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-background border-b border-border animate-in slide-in-from-top-2">
-          <div className="px-6 py-8 flex flex-col gap-6">
-            <Link href="#" className="text-lg text-foreground hover:text-primary transition-colors">
-              Inicio
-            </Link>
-            <Link href="#" className="text-lg text-foreground hover:text-primary transition-colors">
-              Entrevistas
-            </Link>
-            <Link href="#" className="text-lg text-foreground hover:text-primary transition-colors">
-              Investigacion
-            </Link>
-            <Link href="#" className="text-lg text-foreground hover:text-primary transition-colors">
-              Nosotros
-            </Link>
-            <div className="flex gap-4 pt-4 border-t border-border">
-              <Button variant="outline" size="sm" className="flex-1">
-                <Share2 className="h-4 w-4 mr-2" />
-                Compartir
-              </Button>
-              <Button variant="outline" size="sm" className="flex-1">
-                <Bookmark className="h-4 w-4 mr-2" />
-                Guardar
-              </Button>
-            </div>
-          </div>
+        <div className="md:hidden fixed inset-0 top-0 bg-white z-40 pt-24">
+          <nav className="flex flex-col gap-0">
+            {navLinks.map((link, i) => (
+              <Link
+                key={link.label}
+                href={link.href}
+                className="px-8 py-5 text-lg text-foreground/80 hover:text-primary hover:bg-muted/50 border-b border-border/50 transition-all"
+                style={{ animation: `slide-up 0.3s ease-out ${i * 0.05}s both` }}
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {link.label}
+              </Link>
+            ))}
+          </nav>
         </div>
       )}
     </header>

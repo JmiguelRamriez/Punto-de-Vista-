@@ -40,81 +40,82 @@ export function ImageGallery({ images }: ImageGalleryProps) {
 
   return (
     <>
-      <section className="my-16 md:my-24">
+      <section className="my-20 md:my-28">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {images.map((image, index) => (
               <button
                 key={image.src}
                 onClick={() => openLightbox(index)}
-                className="group relative aspect-[4/3] overflow-hidden cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+                className="group relative aspect-[4/3] overflow-hidden bg-muted focus:outline-none focus:ring-2 focus:ring-ring"
               >
                 <Image
                   src={image.src}
                   alt={image.alt}
                   fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="object-cover transition-all duration-700 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300" />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <span className="text-white text-sm uppercase tracking-widest">Ver</span>
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-500" />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <span className="text-white/0 group-hover:text-white/90 text-xs uppercase tracking-[0.2em] font-medium transition-all duration-500 translate-y-2 group-hover:translate-y-0">
+                    Ampliar
+                  </span>
                 </div>
               </button>
             ))}
           </div>
-          <p className="text-center text-muted-foreground text-sm mt-6">
+          <p className="text-center text-muted-foreground/60 text-xs uppercase tracking-[0.15em] mt-8">
             Haz clic en las imagenes para ampliar
           </p>
         </div>
       </section>
 
-      {/* Lightbox */}
       {lightboxOpen && (
-        <div 
+        <div
           className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center"
           onClick={closeLightbox}
         >
           <Button
             variant="ghost"
             size="icon"
-            className="absolute top-6 right-6 text-white hover:bg-white/10 z-10"
+            className="absolute top-8 right-8 text-white/60 hover:text-white hover:bg-white/5 z-10"
             onClick={closeLightbox}
           >
             <X className="h-6 w-6" />
             <span className="sr-only">Cerrar</span>
           </Button>
-          
+
           <Button
             variant="ghost"
             size="icon"
-            className="absolute left-6 top-1/2 -translate-y-1/2 text-white hover:bg-white/10 z-10"
+            className="absolute left-6 top-1/2 -translate-y-1/2 text-white/60 hover:text-white hover:bg-white/5 z-10"
             onClick={(e) => {
               e.stopPropagation();
               goToPrevious();
             }}
           >
             <ChevronLeft className="h-8 w-8" />
-            <span className="sr-only">Imagen anterior</span>
+            <span className="sr-only">Anterior</span>
           </Button>
-          
+
           <Button
             variant="ghost"
             size="icon"
-            className="absolute right-6 top-1/2 -translate-y-1/2 text-white hover:bg-white/10 z-10"
+            className="absolute right-6 top-1/2 -translate-y-1/2 text-white/60 hover:text-white hover:bg-white/5 z-10"
             onClick={(e) => {
               e.stopPropagation();
               goToNext();
             }}
           >
             <ChevronRight className="h-8 w-8" />
-            <span className="sr-only">Imagen siguiente</span>
+            <span className="sr-only">Siguiente</span>
           </Button>
-          
-          <div 
-            className="relative max-w-5xl max-h-[80vh] w-full mx-6"
+
+          <div
+            className="relative max-w-6xl max-h-[85vh] w-full mx-8"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="relative aspect-video">
+            <div className="relative flex items-center justify-center h-[70vh]">
               <Image
                 src={images[currentIndex].src}
                 alt={images[currentIndex].alt}
@@ -122,12 +123,14 @@ export function ImageGallery({ images }: ImageGalleryProps) {
                 className="object-contain"
               />
             </div>
-            <p className="text-white/80 text-center mt-6 text-sm md:text-base">
-              {images[currentIndex].caption}
-            </p>
-            <p className="text-white/40 text-center mt-2 text-sm">
-              {currentIndex + 1} / {images.length}
-            </p>
+            <div className="flex justify-between items-center mt-6">
+              <p className="text-white/70 text-sm md:text-base max-w-2xl">
+                {images[currentIndex].caption}
+              </p>
+              <span className="text-white/30 text-sm ml-4 flex-shrink-0">
+                {currentIndex + 1} / {images.length}
+              </span>
+            </div>
           </div>
         </div>
       )}
