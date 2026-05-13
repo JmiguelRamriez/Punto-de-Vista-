@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Moon, Sun } from "lucide-react";
+import { useTheme } from "next-themes";
 
 const navLinks = [
   { href: "#", label: "Inicio" },
@@ -15,6 +16,10 @@ const navLinks = [
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
+  const { theme, setTheme } = useTheme();
+
+  useEffect(() => setMounted(true), []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,7 +41,7 @@ export function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 ${
         isScrolled
-          ? "bg-white/80 backdrop-blur-xl shadow-[0_1px_0_rgba(0,0,0,0.06)] py-4"
+          ? "bg-background/80 backdrop-blur-xl shadow-[0_1px_0_rgba(0,0,0,0.06)] py-4"
           : "bg-transparent py-6"
       }`}
     >
@@ -44,7 +49,7 @@ export function Navbar() {
         <Link
           href="/"
           className={`font-serif text-xl md:text-2xl font-bold tracking-tight transition-colors duration-500 ${
-            isScrolled ? "text-primary" : "text-white"
+            isScrolled ? "text-foreground" : "text-white"
           }`}
         >
           Punto<span className="font-light"> de Vista</span>
@@ -66,19 +71,37 @@ export function Navbar() {
           ))}
         </div>
 
-        <button
-          className={`md:hidden transition-colors duration-500 ${
-            isScrolled ? "text-foreground" : "text-white"
-          }`}
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          aria-label="Menu"
-        >
-          {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-        </button>
+        <div className="flex items-center gap-3">
+          {mounted && (
+            <button
+              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+              className={`transition-colors duration-500 ${
+                isScrolled ? "text-foreground/60 hover:text-foreground" : "text-white/70 hover:text-white"
+              }`}
+              aria-label="Cambiar tema"
+            >
+              {theme === "dark" ? (
+                <Sun className="h-4 w-4" />
+              ) : (
+                <Moon className="h-4 w-4" />
+              )}
+            </button>
+          )}
+
+          <button
+            className={`md:hidden transition-colors duration-500 ${
+              isScrolled ? "text-foreground" : "text-white"
+            }`}
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label="Menu"
+          >
+            {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </button>
+        </div>
       </nav>
 
       {isMobileMenuOpen && (
-        <div className="md:hidden fixed inset-0 top-0 bg-white z-40 pt-24">
+        <div className="md:hidden fixed inset-0 top-0 bg-background z-40 pt-24">
           <nav className="flex flex-col gap-0">
             {navLinks.map((link, i) => (
               <Link
