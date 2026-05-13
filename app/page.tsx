@@ -80,8 +80,8 @@ export default function ArticlePage() {
       <div ref={addToRefs} className="fade-up-section my-16 md:my-24">
         <div className="relative w-full h-[50vh] md:h-[80vh]">
           <Image
-            src="/images/lab-workspace.jpg"
-            alt="Imagen panoramica"
+            src="/images/tec-campus.jpg"
+            alt="Campus Tecnologico de Monterrey"
             fill
             className="object-cover"
           />
@@ -134,16 +134,6 @@ export default function ArticlePage() {
             [Parrafo de cierre final: Termina con una nota inspiradora o reflexiva que deje al lector pensando.]
           </p>
         </ArticleBody>
-      </div>
-
-      {/* Closing Quote */}
-      <div ref={addToRefs} className="fade-up-section py-20 md:py-28 bg-primary text-primary-foreground">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <p className="font-serif text-2xl md:text-3xl leading-relaxed italic text-white/90 text-balance">
-            &quot;[Cita inspiradora o frase final que resuma el espiritu de la entrevista.]&quot;
-          </p>
-          <p className="mt-8 text-white/50 text-sm">— [Autor de la cita]</p>
-        </div>
       </div>
 
       <Footer />
