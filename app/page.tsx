@@ -5,7 +5,6 @@ import Image from "next/image";
 import { Navbar } from "@/components/article/navbar";
 import { HeroSection } from "@/components/article/hero-section";
 import { ArticleBody } from "@/components/article/article-body";
-import { ImageGallery } from "@/components/article/image-gallery";
 import { PullQuote } from "@/components/article/pull-quote";
 import { InterviewSection } from "@/components/article/interview-section";
 import { Footer } from "@/components/article/footer";
@@ -49,16 +48,6 @@ export default function ArticlePage() {
           quote="[Cita destacada del entrevistado - una frase memorable o impactante que resuma su vision o mensaje principal.]"
           author="[Nombre del Entrevistado]"
           role="[Cargo o Titulo]"
-        />
-      </div>
-
-      <div ref={addToRefs} className="fade-up-section">
-        <ImageGallery
-          images={[
-            { src: "/images/team-collaboration.jpg", alt: "Descripcion de la imagen 1", caption: "[Pie de foto 1: Describe el contexto de esta imagen.]" },
-            { src: "/images/robot-detail.jpg", alt: "Descripcion de la imagen 2", caption: "[Pie de foto 2: Describe el contexto de esta imagen.]" },
-            { src: "/images/lab-workspace.jpg", alt: "Descripcion de la imagen 3", caption: "[Pie de foto 3: Describe el contexto de esta imagen.]" },
-          ]}
         />
       </div>
 
