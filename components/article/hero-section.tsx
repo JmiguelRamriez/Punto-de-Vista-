@@ -24,7 +24,7 @@ export function HeroSection() {
             <span className="text-white/50 text-sm tracking-wide">Tecnológico de Monterrey</span>
           </div>
 
-          <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-white font-bold leading-[1.05] mb-6 text-balance max-w-5xl">
+          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white font-bold leading-[1.05] mb-6 text-balance max-w-5xl">
             Dr. Rick Swenson: más de 40 años formando ingenieros en el Tec
           </h1>
 
