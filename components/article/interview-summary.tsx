@@ -1,11 +1,11 @@
 "use client";
 
 const questions = [
-  "[Pregunta 1: Escribe aqui la primera pregunta de la entrevista]",
-  "[Pregunta 2: Escribe aqui la segunda pregunta de la entrevista]",
-  "[Pregunta 3: Escribe aqui la tercera pregunta de la entrevista]",
-  "[Pregunta 4: Escribe aqui la cuarta pregunta de la entrevista]",
-  "[Pregunta 5: Escribe aqui la quinta pregunta de la entrevista]",
+  "?Que lo enamoro de la tecnologia y cuando supo que su vocacion era ensenar?",
+  "?Que consejo le daria al joven profesor que empezaba hace 40 anos?",
+  "?Como se siente al ver a sus exalumnos convertidos en colegas?",
+  "?Que habilidades humanas diferenciaran a los ingenieros del futuro?",
+  "?Como le gustaria ser recordado por sus estudiantes?",
 ];
 
 export function InterviewSummary() {
@@ -21,10 +21,10 @@ export function InterviewSummary() {
 
         <div className="space-y-5 text-foreground/80 leading-relaxed text-[1.0625rem] text-pretty">
           <p>
-            [Parrafo de resumen: Aqui va una descripcion general de la entrevista. Explica de que trata la conversacion, quien es el entrevistado y por que es relevante. Este texto debe dar al lector una vision clara de lo que encontrara al leer la entrevista completa.]
+            El Dr. Rick Leigh Swenson Durie es una de las figuras mas emblematicas del Tecnologico de Monterrey, con una trayectoria de mas de 40 anos dedicados a la formacion de ingenieros y a la innovacion educativa. Profesor Titular y reconocido como Profesor Emcrito, su legado trasciende las aulas y se extiende a la investigacion, la mentoria y el desarrollo de nuevas generaciones de profesionistas.
           </p>
           <p>
-            [Segundo parrafo: Puedes incluir el contexto detras de la entrevista, donde se realizo, o que momento particular de la carrera del entrevistado captura esta conversacion.]
+            En esta entrevista, el Dr. Swenson comparte su vision sobre la evolucion de la ingenieria, los retos de la educacion superior en Mexico y las lecciones que ha aprendido a lo largo de cuatro decadas formando a algunos de los lideres mas destacados del pais.
           </p>
         </div>
 

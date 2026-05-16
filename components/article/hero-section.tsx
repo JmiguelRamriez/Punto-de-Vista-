@@ -25,11 +25,11 @@ export function HeroSection() {
           </div>
 
           <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-white font-bold leading-[1.05] mb-6 text-balance max-w-5xl">
-            [Titulo de la Entrevista]
+            Dr. Rick Leigh Swenson Durie: 40 anos de ensenanza e innovacion en el Tecnologico de Monterrey
           </h1>
 
           <p className="text-white/70 text-lg md:text-xl max-w-3xl leading-relaxed mb-10 text-pretty font-light">
-            [Subtitulo o breve descripcion del tema de la entrevista y por que es relevante para los lectores.]
+            Una conversacion con el Profesor Emcrito sobre su trayectoria, la evolucion de la ingenieria y el futuro de la educacion en Mexico.
           </p>
 
           <div className="flex flex-col sm:flex-row sm:items-center gap-6 text-white/60 text-sm">
@@ -44,13 +44,13 @@ export function HeroSection() {
                 />
               </div>
               <div>
-                <span className="text-white font-medium">[Nombre del Autor]</span>
+                <span className="text-white font-medium">Redaccion</span>
                 <span className="mx-2 text-white/30">·</span>
-                <span className="text-white/60">[Cargo]</span>
+                <span className="text-white/60">Punto de Vista</span>
               </div>
             </div>
             <div className="flex items-center gap-4 text-white/50">
-              <span>[Fecha]</span>
+              <span>Mayo 2026</span>
               <span className="w-px h-4 bg-white/20" />
               <span>[X] min de lectura</span>
             </div>

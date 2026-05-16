@@ -7,24 +7,24 @@ interface InterviewItem {
 
 const interviews: InterviewItem[] = [
   {
-    question: "[Pregunta 1: Escribe aqui la primera pregunta de la entrevista]",
-    answer: "[Respuesta 1: Aqui va la respuesta completa del entrevistado a la primera pregunta. Puede ser tan larga como sea necesario para capturar toda la informacion relevante.]"
+    question: "?Que lo enamoro de la tecnologia y cuando supo que su verdadera vocacion era ensenar?",
+    answer: "[Respuesta 1: Aqui va la respuesta completa del Dr. Swenson.]"
   },
   {
-    question: "[Pregunta 2: Escribe aqui la segunda pregunta de la entrevista]",
-    answer: "[Respuesta 2: Aqui va la respuesta completa del entrevistado a la segunda pregunta. Incluye detalles, anecdotas o datos relevantes que el entrevistado haya compartido.]"
+    question: "?Que consejo personal le daria al joven profesor que estaba por dar su primera clase hace 40 anos?",
+    answer: "[Respuesta 2: Aqui va la respuesta completa del Dr. Swenson.]"
   },
   {
-    question: "[Pregunta 3: Escribe aqui la tercera pregunta de la entrevista]",
-    answer: "[Respuesta 3: Aqui va la respuesta completa del entrevistado a la tercera pregunta. Asegurate de capturar el tono y la personalidad del entrevistado.]"
+    question: "?Como se siente al ver que sus exalumnos ahora son sus colegas y companeros de trabajo?",
+    answer: "[Respuesta 3: Aqui va la respuesta completa del Dr. Swenson.]"
   },
   {
-    question: "[Pregunta 4: Escribe aqui la cuarta pregunta de la entrevista]",
-    answer: "[Respuesta 4: Aqui va la respuesta completa del entrevistado a la cuarta pregunta.]"
+    question: "?Que habilidades humanas y eticas seran el verdadero diferenciador para los ingenieros del manana?",
+    answer: "[Respuesta 4: Aqui va la respuesta completa del Dr. Swenson.]"
   },
   {
-    question: "[Pregunta 5: Escribe aqui la quinta pregunta de la entrevista]",
-    answer: "[Respuesta 5: Aqui va la respuesta completa del entrevistado a la quinta pregunta.]"
+    question: "?Que sueno personal le emociona cumplir y como le gustaria ser recordado por sus estudiantes?",
+    answer: "[Respuesta 5: Aqui va la respuesta completa del Dr. Swenson.]"
   }
 ];
 
@@ -44,10 +44,10 @@ export function InterviewSection() {
                 />
               </div>
               <div className="mt-6 text-center md:text-left">
-                <h3 className="font-serif text-xl font-bold text-foreground">[Nombre del Entrevistado]</h3>
-                <p className="text-muted-foreground text-sm mt-1">[Cargo o Titulo]</p>
+                <h3 className="font-serif text-xl font-bold text-foreground">Dr. Rick Leigh Swenson Durie</h3>
+                <p className="text-muted-foreground text-sm mt-1">Profesor Titular · Profesor Emcrito</p>
                 <p className="text-muted-foreground/70 text-sm mt-4 leading-relaxed">
-                  [Breve biografia o descripcion del entrevistado.]
+                  Mas de 40 anos de trayectoria en el Tecnologico de Monterrey, donde ha sido reconocido por su excelencia docente, su liderazgo en la formacion de ingenieros y su contribucion al desarrollo academico de la institucion.
                 </p>
               </div>
             </div>

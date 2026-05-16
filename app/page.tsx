@@ -50,9 +50,9 @@ export default function ArticlePage() {
 
       <div id="resumen" ref={addToRefs} className="fade-up-section">
         <PullQuote
-          quote="[Cita destacada del entrevistado - una frase memorable o impactante que resuma su vision o mensaje principal.]"
-          author="[Nombre del Entrevistado]"
-          role="[Cargo o Titulo]"
+          quote="La ensenanza no es transmitir conocimientos, es formar personas capaces de transformar la realidad."
+          author="Dr. Rick Leigh Swenson Durie"
+          role="Profesor Emcrito · Tecnologico de Monterrey"
         />
       </div>
 
@@ -85,19 +85,19 @@ export default function ArticlePage() {
             Reflexiones Finales
           </h2>
           <p className="text-lg leading-relaxed text-foreground/80">
-            [Parrafo de cierre: Reflexiona sobre los puntos clave de la entrevista. Que aprendimos? Cual es el mensaje principal que el entrevistado quiere transmitir?]
+            La conversacion con el Dr. Swenson nos deja ensenanzas profundas sobre el proposito de la educacion. Su enfoque humanista de la ingenieria, su conviccion en el potencial de los estudiantes y su vision critica sobre el futuro de la profesion son un testimonio de lo que significa ser maestro.
           </p>
           <p className="mt-6 text-lg leading-relaxed text-foreground/80">
-            [Parrafo final: Concluye con una observacion significativa o mira hacia el futuro. Puedes incluir una ultima cita del entrevistado o tus propias reflexiones como periodista.]
+            Al escucharlo, queda claro que la verdadera innovacion no esta solo en la tecnologia, sino en la capacidad de formar personas con etica, creatividad y compromiso social.
           </p>
         </ArticleBody>
       </div>
 
       <div ref={addToRefs} className="fade-up-section">
         <PullQuote
-          quote="[Segunda cita destacada - otra frase memorable que cierre o complemente la primera.]"
-          author="[Nombre del Entrevistado]"
-          role="[Cargo o Titulo]"
+          quote="La educacion es el puente entre el potencial y la realizacion. He visto a generaciones de estudiantes convertirse en lideres que transforman Mexico."
+          author="Dr. Rick Leigh Swenson Durie"
+          role="Profesor Emcrito · Tecnologico de Monterrey"
         />
       </div>
 
@@ -107,10 +107,10 @@ export default function ArticlePage() {
             Mirando al Futuro
           </h2>
           <p className="text-lg leading-relaxed text-foreground/80">
-            [Parrafo sobre el futuro: Que viene despues para el entrevistado? Cuales son sus proximos proyectos o metas?]
+            [Parrafo sobre el futuro: Que viene despues para el Dr. Swenson? Cuales son sus proximos proyectos o metas tras mas de 40 anos de trayectoria?]
           </p>
           <p className="mt-6 text-lg leading-relaxed text-foreground/80 mb-12">
-            [Parrafo de cierre final: Termina con una nota inspiradora o reflexiva que deje al lector pensando.]
+            [Parrafo de cierre final: Termina con una nota inspiradora o reflexiva sobre el legado del Dr. Swenson y su impacto en el Tecnologico de Monterrey.]
           </p>
         </ArticleBody>
       </div>
