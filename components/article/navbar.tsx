@@ -7,10 +7,10 @@ import { useTheme } from "next-themes";
 
 const navLinks = [
   { href: "#inicio", label: "Inicio" },
-  { href: "#innovacion", label: "Innovacion" },
-  { href: "#investigacion", label: "Investigacion" },
-  { href: "#ingenieria", label: "Ingenieria" },
-  { href: "#historias", label: "Historias" },
+  { href: "#resumen", label: "Resumen" },
+  { href: "#conversacion", label: "Conversacion" },
+  { href: "#reflexiones", label: "Reflexiones" },
+  { href: "#futuro", label: "Futuro" },
 ];
 
 export function Navbar() {
