@@ -48,7 +48,7 @@ export default function ArticlePage() {
         <InterviewSummary />
       </div>
 
-      <div id="innovacion" ref={addToRefs} className="fade-up-section">
+      <div id="resumen" ref={addToRefs} className="fade-up-section">
         <PullQuote
           quote="[Cita destacada del entrevistado - una frase memorable o impactante que resuma su vision o mensaje principal.]"
           author="[Nombre del Entrevistado]"
@@ -56,7 +56,7 @@ export default function ArticlePage() {
         />
       </div>
 
-      <div id="investigacion" ref={addToRefs} className="fade-up-section">
+      <div id="conversacion" ref={addToRefs} className="fade-up-section">
         <div className="relative w-full h-[50vh] md:h-[80vh]">
           <Image
             src="https://tec.mx/sites/default/files/styles/16_9/public/repositorio/Campus/Queretaro/Instalaciones/biblioteca-campus-queretaro-tec.webp?itok=l_2QsBjr"
@@ -75,7 +75,7 @@ export default function ArticlePage() {
         </div>
       </div>
 
-      <div id="ingenieria" ref={addToRefs} className="fade-up-section">
+      <div id="reflexiones" ref={addToRefs} className="fade-up-section">
         <InterviewSection />
       </div>
 
@@ -101,7 +101,7 @@ export default function ArticlePage() {
         />
       </div>
 
-      <div id="historias" ref={addToRefs} className="fade-up-section">
+      <div id="futuro" ref={addToRefs} className="fade-up-section">
         <ArticleBody>
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mt-8 mb-8">
             Mirando al Futuro
