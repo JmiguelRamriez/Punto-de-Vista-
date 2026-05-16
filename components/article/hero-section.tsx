@@ -21,15 +21,15 @@ export function HeroSection() {
               Entrevista Exclusiva
             </span>
             <span className="text-white/40 text-sm">·</span>
-            <span className="text-white/50 text-sm tracking-wide">Tecnologico de Monterrey</span>
+            <span className="text-white/50 text-sm tracking-wide">Tecnológico de Monterrey</span>
           </div>
 
           <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-white font-bold leading-[1.05] mb-6 text-balance max-w-5xl">
-            Dr. Rick Leigh Swenson Durie: 40 anos de ensenanza e innovacion en el Tecnologico de Monterrey
+            Dr. Rick Swenson: más de 40 años formando ingenieros en el Tec
           </h1>
 
           <p className="text-white/70 text-lg md:text-xl max-w-3xl leading-relaxed mb-10 text-pretty font-light">
-            Una conversacion con el Profesor Emcrito sobre su trayectoria, la evolucion de la ingenieria y el futuro de la educacion en Mexico.
+            Una conversación con el Profesor Emérito sobre su trayectoria, la evolución de la ingeniería y el futuro de la educación en México.
           </p>
 
           <div className="flex flex-col sm:flex-row sm:items-center gap-6 text-white/60 text-sm">

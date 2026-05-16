@@ -1,11 +1,11 @@
 "use client";
 
 const questions = [
-  "?Que lo enamoro de la tecnologia y cuando supo que su vocacion era ensenar?",
-  "?Que consejo le daria al joven profesor que empezaba hace 40 anos?",
-  "?Como se siente al ver a sus exalumnos convertidos en colegas?",
-  "?Que habilidades humanas diferenciaran a los ingenieros del futuro?",
-  "?Como le gustaria ser recordado por sus estudiantes?",
+  "¿Qué lo enamoró de la tecnología y cuándo supo que su vocación era enseñar?",
+  "¿Qué consejo le daría al joven profesor que empezaba hace 40 años?",
+  "¿Cómo se siente al ver a sus exalumnos convertidos en colegas?",
+  "¿Qué habilidades humanas diferenciarán a los ingenieros del futuro?",
+  "¿Cómo le gustaría ser recordado por sus estudiantes?",
 ];
 
 export function InterviewSummary() {
@@ -21,7 +21,7 @@ export function InterviewSummary() {
 
         <div className="space-y-5 text-foreground/80 leading-relaxed text-[1.0625rem] text-pretty">
           <p>
-            El Dr. Rick Leigh Swenson Durie es una de las figuras mas emblematicas del Tecnologico de Monterrey, con una trayectoria de mas de 40 anos dedicados a la formacion de ingenieros y a la innovacion educativa. Profesor Titular y reconocido como Profesor Emcrito, su legado trasciende las aulas y se extiende a la investigacion, la mentoria y el desarrollo de nuevas generaciones de profesionistas.
+            El Dr. Rick Leigh Swenson Durie es una de las figuras más emblemáticas del Tecnológico de Monterrey, con una trayectoria de más de 40 años dedicados a la formación de ingenieros y a la innovación educativa. Profesor Titular y reconocido como Profesor Emérito, su legado trasciende las aulas y se extiende a la investigación, la mentoría y el desarrollo de nuevas generaciones de profesionistas.
           </p>
           <p>
             En esta entrevista, el Dr. Swenson comparte su vision sobre la evolucion de la ingenieria, los retos de la educacion superior en Mexico y las lecciones que ha aprendido a lo largo de cuatro decadas formando a algunos de los lideres mas destacados del pais.
