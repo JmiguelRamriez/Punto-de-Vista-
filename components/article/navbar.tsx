@@ -6,11 +6,11 @@ import { Menu, X, Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 
 const navLinks = [
-  { href: "#", label: "Inicio" },
-  { href: "#", label: "Innovacion" },
-  { href: "#", label: "Investigacion" },
-  { href: "#", label: "Ingenieria" },
-  { href: "#", label: "Historias" },
+  { href: "#inicio", label: "Inicio" },
+  { href: "#innovacion", label: "Innovacion" },
+  { href: "#investigacion", label: "Investigacion" },
+  { href: "#ingenieria", label: "Ingenieria" },
+  { href: "#historias", label: "Historias" },
 ];
 
 export function Navbar() {
@@ -37,6 +37,22 @@ export function Navbar() {
     }
   }, [isMobileMenuOpen]);
 
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    setIsMobileMenuOpen(false);
+    const targetId = href.replace("#", "");
+    if (targetId === "inicio") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      return;
+    }
+    const el = document.getElementById(targetId);
+    if (el) {
+      const offset = 100;
+      const top = el.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top, behavior: "smooth" });
+    }
+  };
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 ${
@@ -46,28 +62,30 @@ export function Navbar() {
       }`}
     >
       <nav className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-        <Link
-          href="/"
-          className={`font-serif text-xl md:text-2xl font-bold tracking-tight transition-colors duration-500 ${
+        <a
+          href="#inicio"
+          onClick={(e) => handleNavClick(e, "#inicio")}
+          className={`font-serif text-xl md:text-2xl font-bold tracking-tight transition-colors duration-500 cursor-pointer ${
             isScrolled ? "text-foreground" : "text-white"
           }`}
         >
           Punto<span className="font-light"> de Vista</span>
-        </Link>
+        </a>
 
         <div className="hidden md:flex items-center gap-10">
           {navLinks.map((link) => (
-            <Link
+            <a
               key={link.label}
               href={link.href}
-              className={`text-sm tracking-wider uppercase font-medium transition-all duration-300 hover:opacity-100 ${
+              onClick={(e) => handleNavClick(e, link.href)}
+              className={`text-sm tracking-wider uppercase font-medium transition-all duration-300 hover:opacity-100 cursor-pointer ${
                 isScrolled
                   ? "text-foreground/60 hover:text-foreground"
                   : "text-white/70 hover:text-white"
               }`}
             >
               {link.label}
-            </Link>
+            </a>
           ))}
         </div>
 
@@ -104,15 +122,15 @@ export function Navbar() {
         <div className="md:hidden fixed inset-0 top-0 bg-background z-40 pt-24">
           <nav className="flex flex-col gap-0">
             {navLinks.map((link, i) => (
-              <Link
+              <a
                 key={link.label}
                 href={link.href}
-                className="px-8 py-5 text-lg text-foreground/80 hover:text-primary hover:bg-muted/50 border-b border-border/50 transition-all"
+                className="px-8 py-5 text-lg text-foreground/80 hover:text-primary hover:bg-muted/50 border-b border-border/50 transition-all cursor-pointer"
                 style={{ animation: `slide-up 0.3s ease-out ${i * 0.05}s both` }}
-                onClick={() => setIsMobileMenuOpen(false)}
+                onClick={(e) => handleNavClick(e, link.href)}
               >
                 {link.label}
-              </Link>
+              </a>
             ))}
           </nav>
         </div>

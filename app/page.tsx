@@ -6,6 +6,7 @@ import { Navbar } from "@/components/article/navbar";
 import { HeroSection } from "@/components/article/hero-section";
 import { ArticleBody } from "@/components/article/article-body";
 import { PullQuote } from "@/components/article/pull-quote";
+import { InterviewSummary } from "@/components/article/interview-summary";
 import { InterviewSection } from "@/components/article/interview-section";
 import { Footer } from "@/components/article/footer";
 
@@ -43,6 +44,10 @@ export default function ArticlePage() {
 
       <HeroSection />
 
+      <div ref={addToRefs} className="fade-up-section">
+        <InterviewSummary />
+      </div>
+
       <div id="innovacion" ref={addToRefs} className="fade-up-section">
         <PullQuote
           quote="[Cita destacada del entrevistado - una frase memorable o impactante que resuma su vision o mensaje principal.]"
@@ -71,6 +76,7 @@ export default function ArticlePage() {
       </div>
 
       <div id="ingenieria" ref={addToRefs} className="fade-up-section">
+        <InterviewSection />
       </div>
 
       <div ref={addToRefs} className="fade-up-section">
