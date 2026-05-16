@@ -50,7 +50,7 @@ export default function ArticlePage() {
 
       <div ref={addToRefs} className="fade-up-section">
         <PullQuote
-          quote="La ensenanza no es transmitir conocimientos, es formar personas capaces de transformar la realidad."
+          quote="La enseñanza no es transmitir conocimientos, es formar personas capaces de transformar la realidad."
           author="Dr. Rick Leigh Swenson Durie"
           role="Profesor Emérito · Tecnológico de Monterrey"
         />
@@ -68,7 +68,7 @@ export default function ArticlePage() {
           <div className="absolute bottom-0 left-0 right-0 p-8 md:p-16">
             <div className="max-w-5xl mx-auto">
               <p className="text-white/80 text-sm md:text-base max-w-2xl">
-                [Pie de foto: Descripcion de la imagen panoramica y su relevancia para la historia.]
+                [Pie de foto: Descripción de la imagen panorámica y su relevancia para la historia.]
               </p>
             </div>
           </div>
@@ -85,17 +85,17 @@ export default function ArticlePage() {
             Reflexiones Finales
           </h2>
           <p className="text-lg leading-relaxed text-foreground/80">
-            La conversacion con el Dr. Swenson nos deja ensenanzas profundas sobre el proposito de la educacion. Su enfoque humanista de la ingenieria, su conviccion en el potencial de los estudiantes y su vision critica sobre el futuro de la profesion son un testimonio de lo que significa ser maestro.
+            La conversación con el Dr. Swenson nos deja enseñanzas profundas sobre el propósito de la educación. Su enfoque humanista de la ingeniería, su convicción en el potencial de los estudiantes y su visión crítica sobre el futuro de la profesión son un testimonio de lo que significa ser maestro.
           </p>
           <p className="mt-6 text-lg leading-relaxed text-foreground/80">
-            Al escucharlo, queda claro que la verdadera innovacion no esta solo en la tecnologia, sino en la capacidad de formar personas con etica, creatividad y compromiso social.
+            Al escucharlo, queda claro que la verdadera innovación no está solo en la tecnología, sino en la capacidad de formar personas con ética, creatividad y compromiso social.
           </p>
         </ArticleBody>
       </div>
 
       <div ref={addToRefs} className="fade-up-section">
         <PullQuote
-          quote="La educacion es el puente entre el potencial y la realizacion. He visto a generaciones de estudiantes convertirse en lideres que transforman Mexico."
+          quote="La educación es el puente entre el potencial y la realización. He visto a generaciones de estudiantes convertirse en líderes que transforman México."
           author="Dr. Rick Leigh Swenson Durie"
           role="Profesor Emérito · Tecnológico de Monterrey"
         />

@@ -17,8 +17,8 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Punto de Vista — Historias de Innovacion e Ingenieria',
-  description: 'Una plataforma editorial del Tecnologico de Monterrey dedicada a la innovacion, investigacion y las personas que transforman nuestro futuro a traves de la ingenieria y la tecnologia.',
+  title: 'Punto de Vista — Historias de Innovación e Ingeniería',
+  description: 'Una plataforma editorial del Tecnológico de Monterrey dedicada a la innovación, investigación y las personas que transforman nuestro futuro a través de la ingeniería y la tecnología.',
   icons: {
     icon: [
       {

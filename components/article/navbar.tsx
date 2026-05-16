@@ -8,7 +8,7 @@ import { useTheme } from "next-themes";
 const navLinks = [
   { href: "#inicio", label: "Inicio" },
   { href: "#resumen", label: "Resumen" },
-  { href: "#conversacion", label: "Conversacion" },
+  { href: "#conversacion", label: "Conversación" },
   { href: "#reflexiones", label: "Reflexiones" },
   { href: "#futuro", label: "Futuro" },
 ];

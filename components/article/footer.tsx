@@ -11,7 +11,7 @@ export function Footer() {
               Punto<span className="font-light text-white/60"> de Vista</span>
             </Link>
             <p className="mt-5 text-white/40 max-w-md leading-relaxed text-sm">
-              Una plataforma editorial del Tecnologico de Monterrey. Contamos las historias de innovacion, investigacion y las personas extraordinarias que estan dando forma a nuestro futuro a traves de la ingenieria y la tecnologia.
+              Una plataforma editorial del Tecnológico de Monterrey. Contamos las historias de innovación, investigación y las personas extraordinarias que están dando forma a nuestro futuro a través de la ingeniería y la tecnología.
             </p>
 
             <div className="mt-10">

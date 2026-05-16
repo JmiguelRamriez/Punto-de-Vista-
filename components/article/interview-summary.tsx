@@ -16,7 +16,7 @@ export function InterviewSummary() {
           Resumen
         </span>
         <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mt-3 mb-8">
-          Sobre esta conversacion
+          Sobre esta conversación
         </h2>
 
         <div className="space-y-5 text-foreground/80 leading-relaxed text-[1.0625rem] text-pretty">
@@ -24,7 +24,7 @@ export function InterviewSummary() {
             El Dr. Rick Leigh Swenson Durie es una de las figuras más emblemáticas del Tecnológico de Monterrey, con una trayectoria de más de 40 años dedicados a la formación de ingenieros y a la innovación educativa. Profesor Titular y reconocido como Profesor Emérito, su legado trasciende las aulas y se extiende a la investigación, la mentoría y el desarrollo de nuevas generaciones de profesionistas.
           </p>
           <p>
-            En esta entrevista, el Dr. Swenson comparte su vision sobre la evolucion de la ingenieria, los retos de la educacion superior en Mexico y las lecciones que ha aprendido a lo largo de cuatro decadas formando a algunos de los lideres mas destacados del pais.
+            En esta entrevista, el Dr. Swenson comparte su visión sobre la evolución de la ingeniería, los retos de la educación superior en México y las lecciones que ha aprendido a lo largo de cuatro décadas formando a algunos de los líderes más destacados del país.
           </p>
         </div>
 
