@@ -36,8 +36,8 @@ export function HeroSection() {
             <div className="flex items-center gap-4">
               <div className="w-11 h-11 rounded-full bg-white/10 ring-1 ring-white/20 overflow-hidden flex-shrink-0">
                 <Image
-                  src="/images/researcher-portrait-1.jpg"
-                  alt="Foto del autor"
+                  src="/images/professor-swenson.jpg"
+                  alt="Rick Lee Swenson"
                   width={44}
                   height={44}
                   className="w-full h-full object-cover"
@@ -52,7 +52,7 @@ export function HeroSection() {
             <div className="flex items-center gap-4 text-white/50">
               <span>Mayo 2026</span>
               <span className="w-px h-4 bg-white/20" />
-              <span>[X] min de lectura</span>
+               <span>4 min de lectura</span>
             </div>
           </div>
         </div>

@@ -16,7 +16,7 @@ export function Footer() {
 
             <div className="mt-10">
               <p className="text-xs uppercase tracking-[0.2em] text-white/30 font-medium mb-4">
-                Suscribete al boletin
+                Suscríbete al boletín
               </p>
               <form className="flex gap-2 max-w-sm">
                 <input
@@ -39,7 +39,7 @@ export function Footer() {
               Secciones
             </h4>
             <ul className="space-y-3">
-              {["Innovacion", "Investigacion", "Ingenieria", "Historias", "Vida Universitaria"].map((item) => (
+              {["Innovación", "Investigación", "Ingeniería", "Historias", "Vida Universitaria"].map((item) => (
                 <li key={item}>
                   <Link href="#" className="text-white/50 hover:text-white text-sm transition-colors">
                     {item}
@@ -54,7 +54,7 @@ export function Footer() {
               Acerca de
             </h4>
             <ul className="space-y-3">
-              {["Nuestra Mision", "Equipo Editorial", "Contacto", "Escribe para Nosotros"].map((item) => (
+              {["Nuestra Misión", "Equipo Editorial", "Contacto", "Escribe para Nosotros"].map((item) => (
                 <li key={item}>
                   <Link href="#" className="text-white/50 hover:text-white text-sm transition-colors">
                     {item}
@@ -99,9 +99,9 @@ export function Footer() {
         </div>
 
         <div className="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/25">
-          <p>&copy; 2026 Punto de Vista · Tecnologico de Monterrey</p>
+          <p>&copy; 2026 Punto de Vista · Tecnológico de Monterrey</p>
           <div className="flex gap-6">
-            {["Privacidad", "Terminos", "Accesibilidad"].map((item) => (
+            {["Privacidad", "Términos", "Accesibilidad"].map((item) => (
               <Link key={item} href="#" className="hover:text-white/50 transition-colors">
                 {item}
               </Link>

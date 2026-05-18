@@ -40,7 +40,7 @@ export function InterviewSection() {
                   src="/images/professor-swenson.jpg"
                   alt="Foto del entrevistado"
                   fill
-                  className="object-cover"
+                  className="object-cover scale-[1.8] object-[center_20%]"
                 />
               </div>
               <div className="mt-6 text-center md:text-left">
