@@ -25,11 +25,11 @@ export function HeroSection() {
           </div>
 
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white font-bold leading-[1.05] mb-6 text-balance max-w-5xl">
-            Dr. Rick Swenson: más de 40 años formando ingenieros en el Tec
+            Rick Lee Swenson: más de 45 años formando ingenieros en el Tec
           </h1>
 
           <p className="text-white/70 text-lg md:text-xl max-w-3xl leading-relaxed mb-10 text-pretty font-light">
-            Una conversación con el Profesor Emérito sobre su trayectoria, la evolución de la ingeniería y el futuro de la educación en México.
+            Una conversación con el legendario profesor que llegó al Tec en 1977, formó parte de la segunda generación de Sistemas Computacionales y hoy, con más de 45 años de trayectoria, es una institución dentro del campus.
           </p>
 
           <div className="flex flex-col sm:flex-row sm:items-center gap-6 text-white/60 text-sm">
@@ -44,7 +44,7 @@ export function HeroSection() {
                 />
               </div>
               <div>
-                <span className="text-white font-medium">Redaccion</span>
+                <span className="text-white font-medium">Redacción</span>
                 <span className="mx-2 text-white/30">·</span>
                 <span className="text-white/60">Punto de Vista</span>
               </div>

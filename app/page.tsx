@@ -50,8 +50,8 @@ export default function ArticlePage() {
 
       <div ref={addToRefs} className="fade-up-section">
         <PullQuote
-          quote="La enseñanza no es transmitir conocimientos, es formar personas capaces de transformar la realidad."
-          author="Dr. Rick Leigh Swenson Durie"
+          quote="La educación entra más por el corazón que por la cabeza."
+          author="Rick Lee Swenson"
           role="Profesor Emérito · Tecnológico de Monterrey"
         />
       </div>
@@ -95,8 +95,8 @@ export default function ArticlePage() {
 
       <div ref={addToRefs} className="fade-up-section">
         <PullQuote
-          quote="La educación es el puente entre el potencial y la realización. He visto a generaciones de estudiantes convertirse en líderes que transforman México."
-          author="Dr. Rick Leigh Swenson Durie"
+          quote="Yo no soy maestro porque domino mi materia. Soy maestro porque me interesa mi alumno."
+          author="Rick Lee Swenson"
           role="Profesor Emérito · Tecnológico de Monterrey"
         />
       </div>
@@ -107,10 +107,10 @@ export default function ArticlePage() {
             Mirando al Futuro
           </h2>
           <p className="text-lg leading-relaxed text-foreground/80">
-            [Párrafo sobre el futuro: Qué viene después para el Dr. Swenson? Cuáles son sus próximos proyectos o metas tras más de 40 años de trayectoria?]
+            Hoy, ya jubilado, Rick Lee Swenson sigue dando clases en el Tec de Monterrey, fiel a su vocación y a esa frase que lo define: \"La educación entra más por el corazón que por la cabeza\". Lejos de retirarse, continúa tomando cursos, aprendiendo nuevas tecnologías y demostrando que su mayor miedo —quedarse obsoleto— es también su mayor motor.
           </p>
           <p className="mt-6 text-lg leading-relaxed text-foreground/80 mb-12">
-            [Párrafo de cierre final: Termina con una nota inspiradora o reflexiva sobre el legado del Dr. Swenson y su impacto en el Tecnológico de Monterrey.]
+            Cuando se le pregunta qué legado quiere dejar, su respuesta no tiene que ver con logros académicos ni innovaciones técnicas. Él quiere ser recordado como alguien que supo arrancar sonrisas. Porque al final, después de 45 años frente al pizarrón, ha descubierto que la conexión humana —esa risa compartida en medio de una explicación de circuitos— es lo que realmente transforma a un estudiante.
           </p>
         </ArticleBody>
       </div>

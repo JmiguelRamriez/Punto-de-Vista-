@@ -21,10 +21,10 @@ export function InterviewSummary() {
 
         <div className="space-y-5 text-foreground/80 leading-relaxed text-[1.0625rem] text-pretty">
           <p>
-            El Dr. Rick Leigh Swenson Durie es una de las figuras más emblemáticas del Tecnológico de Monterrey, con una trayectoria de más de 40 años dedicados a la formación de ingenieros y a la innovación educativa. Profesor Titular y reconocido como Profesor Emérito, su legado trasciende las aulas y se extiende a la investigación, la mentoría y el desarrollo de nuevas generaciones de profesionistas.
+            Rick Lee Swenson (67 años, nacido en 1958 en Niagara Falls, Ontario, Canadá) llegó a Querétaro por el trabajo de su padre. Ingresó al Tec de Monterrey en 1977, formando parte de la segunda generación de Sistemas Computacionales en el campus. Empezó a dar clases siendo aún estudiante debido a la escasez de profesores en el área. Hoy, con más de 45 años de trayectoria, es una institución dentro del campus, reconocido como Profesor Titular y Profesor Emérito.
           </p>
           <p>
-            En esta entrevista, el Dr. Swenson comparte su visión sobre la evolución de la ingeniería, los retos de la educación superior en México y las lecciones que ha aprendido a lo largo de cuatro décadas formando a algunos de los líderes más destacados del país.
+            En esta entrevista, Rick comparte su visión sobre la evolución de la ingeniería, los retos de la educación superior en México y las lecciones que ha aprendido a lo largo de cuatro décadas y media formando a algunos de los líderes más destacados del país.
           </p>
         </div>
 
