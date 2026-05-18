@@ -105,7 +105,7 @@ export default function ArticlePage() {
             Mirando al Futuro
           </h2>
           <p className="text-lg leading-relaxed text-foreground/80">
-            Hoy, ya jubilado, Rick Lee Swenson sigue dando clases en el Tec de Monterrey, fiel a su vocación y a esa frase que lo define: \u201CLa educación entra más por el corazón que por la cabeza\u201D. Lejos de retirarse, continúa tomando cursos, aprendiendo nuevas tecnologías y demostrando que su mayor miedo —quedarse obsoleto— es también su mayor motor.
+            Hoy, ya jubilado, Rick Lee Swenson sigue dando clases en el Tec de Monterrey, fiel a su vocación y a esa frase que lo define: &ldquo;La educación entra más por el corazón que por la cabeza&rdquo;. Lejos de retirarse, continúa tomando cursos, aprendiendo nuevas tecnologías y demostrando que su mayor miedo —quedarse obsoleto— es también su mayor motor.
           </p>
           <p className="mt-6 text-lg leading-relaxed text-foreground/80 mb-12">
             Cuando se le pregunta qué legado quiere dejar, su respuesta no tiene que ver con logros académicos ni innovaciones técnicas. Él quiere ser recordado como alguien que supo arrancar sonrisas. Porque al final, después de 45 años frente al pizarrón, ha descubierto que la conexión humana —esa risa compartida en medio de una explicación de circuitos— es lo que realmente transforma a un estudiante.

@@ -37,7 +37,7 @@ export function InterviewSection() {
             <div className="md:sticky md:top-32">
               <div className="relative w-28 h-28 md:w-36 md:h-36 mx-auto md:mx-0 overflow-hidden">
                 <Image
-                  src="/images/professor-swenson.jpg"
+                  src="/images/PROFESOR.jpeg"
                   alt="Foto del entrevistado"
                   fill
                   className="object-cover scale-[1.8] object-[center_20%]"
@@ -47,7 +47,7 @@ export function InterviewSection() {
                 <h3 className="font-serif text-xl font-bold text-foreground">Rick Lee Swenson</h3>
                 <p className="text-muted-foreground text-sm mt-1">Profesor Titular · Profesor Emérito</p>
                 <p className="text-muted-foreground/70 text-sm mt-4 leading-relaxed">
-                  67 años, nacido en Niagara Falls, Canadá. Ingresó al Tec de Monterrey en 1977, formando parte de la segunda generación de Sistemas Computacionales. Comenzó a dar clases siendo estudiante y hoy, con más de 45 años de trayectoria, es una institución dentro del campus de Querétaro.
+                  67 años, nacido en Niagara Falls, Canadá. Ingresó al Tec de Monterrey en 1977, formando parte de la segunda generación de Sistemas Computacionales. Comenzó a dar clases siendo estudiante y hoy, con más de 45 años de trayectoria.
                 </p>
               </div>
             </div>
