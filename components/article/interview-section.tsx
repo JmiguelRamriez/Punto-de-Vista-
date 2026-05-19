@@ -44,7 +44,7 @@ export function InterviewSection() {
                 />
               </div>
               <div className="mt-6 text-center md:text-left">
-                <h3 className="font-serif text-xl font-bold text-foreground">Rick Lee Swenson</h3>
+                <h3 className="font-serif text-xl font-bold text-foreground">Rick Swenson</h3>
                 <p className="text-muted-foreground text-sm mt-1">Profesor Titular · Profesor Emérito</p>
                 <p className="text-muted-foreground/70 text-sm mt-4 leading-relaxed">
                   67 años, nacido en Niagara Falls, Canadá. Ingresó al Tec de Monterrey en 1977, formando parte de la segunda generación de Sistemas Computacionales. Comenzó a dar clases siendo estudiante y hoy, con más de 45 años de trayectoria.

@@ -25,7 +25,7 @@ export function HeroSection() {
           </div>
 
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white font-bold leading-[1.05] mb-6 text-balance max-w-5xl">
-            Rick Lee Swenson: más de 45 años formando ingenieros en el Tec
+            Rick Swenson: más de 45 años formando ingenieros en el Tec
           </h1>
 
           <p className="text-white/70 text-lg md:text-xl max-w-3xl leading-relaxed mb-10 text-pretty font-light">
@@ -37,7 +37,7 @@ export function HeroSection() {
               <div className="w-11 h-11 rounded-full bg-white/10 ring-1 ring-white/20 overflow-hidden flex-shrink-0">
                 <Image
                   src="/images/PROFESOR.jpeg"
-                  alt="Rick Lee Swenson"
+                  alt="Rick Swenson"
                   width={44}
                   height={44}
                   className="w-full h-full object-cover"
