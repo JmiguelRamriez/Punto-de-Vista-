@@ -19,8 +19,9 @@ export function VideoReel() {
                 <iframe
                   src="https://www.youtube.com/embed/WAEIJIkUB8I"
                   className="absolute inset-0 w-full h-full"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
+                  title="Video resumen de la entrevista con Rick Swenson"
                 />
               </div>
             </div>
