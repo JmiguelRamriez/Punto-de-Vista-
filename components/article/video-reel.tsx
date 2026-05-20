@@ -16,15 +16,12 @@ export function VideoReel() {
             <div className="relative rounded-[2.5rem] bg-zinc-900 dark:bg-zinc-800 p-2 shadow-2xl shadow-black/30">
               <div className="relative rounded-[2.25rem] overflow-hidden bg-black aspect-[9/19]">
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-28 h-5 bg-black rounded-b-xl z-10" />
-                <video
-                  className="w-full h-full object-cover"
-                  controls
-                  playsInline
-                  preload="metadata"
-                >
-                  <source src="/videos/resumen.MOV" type="video/quicktime" />
-                  Tu navegador no soporta video.
-                </video>
+                <iframe
+                  src="https://www.youtube.com/embed/WAEIJIkUB8I"
+                  className="absolute inset-0 w-full h-full"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
               </div>
             </div>
             <p className="text-center text-xs text-muted-foreground/60 mt-4 tracking-wide">
