@@ -9,6 +9,7 @@ import { PullQuote } from "@/components/article/pull-quote";
 import { InterviewSummary } from "@/components/article/interview-summary";
 import { InterviewSection } from "@/components/article/interview-section";
 import { Footer } from "@/components/article/footer";
+import { VideoReel } from "@/components/article/video-reel";
 
 export default function ArticlePage() {
   const sectionsRef = useRef<HTMLDivElement[]>([]);
@@ -97,6 +98,10 @@ export default function ArticlePage() {
           author="Rick Swenson"
           role="Profesor Emérito · Tecnológico de Monterrey"
         />
+      </div>
+
+      <div ref={addToRefs} className="fade-up-section">
+        <VideoReel />
       </div>
 
       <div id="futuro" ref={addToRefs} className="fade-up-section">
