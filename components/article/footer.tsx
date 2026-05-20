@@ -34,7 +34,7 @@ export function Footer() {
             </div>
           </div>
 
-          <div className="md:col-span-2 md:col-start-7">
+          <div className="md:col-span-2 md:col-start-11">
             <h4 className="text-xs uppercase tracking-[0.2em] text-white/30 font-medium mb-6">
               Redes
             </h4>
