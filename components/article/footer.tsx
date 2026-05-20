@@ -36,36 +36,6 @@ export function Footer() {
 
           <div className="md:col-span-2 md:col-start-7">
             <h4 className="text-xs uppercase tracking-[0.2em] text-white/30 font-medium mb-6">
-              Secciones
-            </h4>
-            <ul className="space-y-3">
-              {["Innovación", "Investigación", "Ingeniería", "Historias", "Vida Universitaria"].map((item) => (
-                <li key={item}>
-                  <Link href="#" className="text-white/50 hover:text-white text-sm transition-colors">
-                    {item}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="md:col-span-2">
-            <h4 className="text-xs uppercase tracking-[0.2em] text-white/30 font-medium mb-6">
-              Acerca de
-            </h4>
-            <ul className="space-y-3">
-              {["Nuestra Misión", "Equipo Editorial", "Contacto", "Escribe para Nosotros"].map((item) => (
-                <li key={item}>
-                  <Link href="#" className="text-white/50 hover:text-white text-sm transition-colors">
-                    {item}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="md:col-span-2">
-            <h4 className="text-xs uppercase tracking-[0.2em] text-white/30 font-medium mb-6">
               Redes
             </h4>
             <div className="flex gap-3">

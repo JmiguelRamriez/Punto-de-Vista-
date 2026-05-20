@@ -1,6 +1,6 @@
 export function VideoReel() {
   return (
-    <section className="py-20 md:py-28 px-6">
+    <section className="pb-20 md:pb-28 pt-6 md:pt-10 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-10 md:mb-12">
           <span className="text-xs uppercase tracking-[0.2em] text-accent font-medium">
